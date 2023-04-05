@@ -59,4 +59,46 @@
     top:200px;
     left:300px;
 }
+.date-list{
+    width:60%;
 
+}
+.date-list li{
+    list-style: none;
+    line-height: 28px;
+}
+.date-list li a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.date-list h3 {
+    padding: 14px;
+    padding-left: 0px;
+    font-weight: 200;
+    position: relative;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, .5);
+}
+.date-list li:hover h3 {
+    font-weight: 400;
+    padding-left: 40px;
+    font-size: 28px;
+    color: #ffa178;
+}
+
+.date-list h3::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffa178;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: 0.5s;
+}
+
+.date-list li:hover h3::before {
+    width: 30px;
+}
